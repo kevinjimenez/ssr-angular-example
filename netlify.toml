@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build:ssr"
+  functions = "netlify/functions"
+  publish = "dist/pokemon-ssr/browser"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
